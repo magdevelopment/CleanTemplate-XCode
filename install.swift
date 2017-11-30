@@ -13,14 +13,16 @@ let destinationRelativePath = "/Platforms/iPhoneOS.platform/Developer/Library/Xc
 func moveTemplate() {
     
     let fileManager = FileManager.default
-    let destinationPath = bash(command: "xcode-select", arguments: ["--print-path"]).appending(destinationRelativePath)
+    let templatesDirPath = bash(command: "xcode-select", arguments: ["--print-path"]).appending(destinationRelativePath)
     do {
-        if !fileManager.fileExists(atPath:"\(destinationPath)/\(templateName)"){
-            try fileManager.copyItem(atPath: templateName, toPath: "\(destinationPath)/\(templateName)")
+        let destinationPath = "\(templatesDirPath)/\(templateName)"
+        if !fileManager.fileExists(atPath: destinationPath){
+            try fileManager.copyItem(atPath: templateName, toPath: destinationPath)
             print("✅  Template installed succesfully 🎉. Enjoy it 🙂")
             
         } else {
-            try _ = fileManager.replaceItemAt(URL(fileURLWithPath:"\(destinationPath)/\(templateName)"), withItemAt: URL(fileURLWithPath:templateName))
+            try fileManager.removeItem(atPath: destinationPath)
+            try fileManager.copyItem(atPath: templateName, toPath: destinationPath)
             print("✅  Template already exists. So has been replaced succesfully 🎉. Enjoy it 🙂")
         }
     } catch let error as NSError {

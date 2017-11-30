@@ -15,6 +15,10 @@ class ___VARIABLE_productName:identifier___ViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    deinit {
+        presenter.onViewDidDetach()
+    }
 }
 
 extension ___VARIABLE_productName:identifier___ViewController: ___VARIABLE_productName:identifier___View {

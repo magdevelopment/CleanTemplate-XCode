@@ -11,7 +11,7 @@ import UIKit
 class ___VARIABLE_productName:identifier___PresenterImpl: RxPresenter, ___VARIABLE_productName:identifier___Presenter {
 
     private weak var view: ___VARIABLE_productName:identifier___View?
-    private let interactor: ___VARIABLE_productName:identifier___Interactor!
+    private let interactor: ___VARIABLE_productName:identifier___Interactor
     private let router: ___VARIABLE_productName:identifier___Router
 
     init(view: ___VARIABLE_productName:identifier___View, interactor: ___VARIABLE_productName:identifier___Interactor, router: ___VARIABLE_productName:identifier___Router, errorResolver: ErrorResolver) {

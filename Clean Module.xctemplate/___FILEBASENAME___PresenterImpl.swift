@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___VARIABLE_productName:identifier___PresenterImpl: RxPresenter, ___VARIABLE_productName:identifier___Presenter {
+class ___VARIABLE_productName: identifier___PresenterImpl: RxPresenter, ___VARIABLE_productName:identifier___Presenter {
 
     private weak var view: ___VARIABLE_productName:identifier___View?
     private let interactor: ___VARIABLE_productName:identifier___Interactor
@@ -18,7 +18,7 @@ class ___VARIABLE_productName:identifier___PresenterImpl: RxPresenter, ___VARIAB
         self.view = view
         self.interactor = interactor
         self.router = router
-        
+
         super.init(errorResolver: errorResolver)
     }
 }

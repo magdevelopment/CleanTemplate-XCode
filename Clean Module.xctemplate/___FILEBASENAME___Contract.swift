@@ -8,19 +8,19 @@
 
 import Foundation
 
-protocol ___VARIABLE_productName:identifier___View: class {
-    
+protocol ___VARIABLE_productName: identifier___View: class {
+
 }
 
-protocol ___VARIABLE_productName:identifier___Presenter {
+protocol ___VARIABLE_productName: identifier___Presenter {
     func onViewDidAttach()
     func onViewDidDetach()
 }
 
-protocol ___VARIABLE_productName:identifier___Interactor {
-    
+protocol ___VARIABLE_productName: identifier___Interactor {
+
 }
 
-protocol ___VARIABLE_productName:identifier___Router {
+protocol ___VARIABLE_productName: identifier___Router {
 
 }

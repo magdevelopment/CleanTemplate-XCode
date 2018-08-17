@@ -8,19 +8,19 @@
 
 import UIKit
 
-class ___VARIABLE_productName:identifier___ViewController: UIViewController {
+class ___VARIABLE_productName: identifier___ViewController: UIViewController {
 
 	var presenter: ___VARIABLE_productName:identifier___Presenter!
 
 	override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     deinit {
         presenter.onViewDidDetach()
     }
 }
 
-extension ___VARIABLE_productName:identifier___ViewController: ___VARIABLE_productName:identifier___View {
-    
+extension ___VARIABLE_productName: identifier___ViewController: ___VARIABLE_productName:identifier___View {
+
 }

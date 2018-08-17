@@ -9,11 +9,11 @@
 import UIKit
 import DITranquillity
 
-class ___VARIABLE_productName:identifier___RouterImpl: ___VARIABLE_productName:identifier___Router {
-    
+class ___VARIABLE_productName: identifier___RouterImpl: ___VARIABLE_productName:identifier___Router {
+
     private weak var viewController: UIViewController?
     private let container: DIContainer!
-    
+
     init(viewController: ___VARIABLE_productName:identifier___ViewController, container: DIContainer) {
         self.viewController = viewController
         self.container = container

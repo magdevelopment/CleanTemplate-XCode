@@ -13,7 +13,7 @@
         <!--Test View Controller-->
         <scene sceneID="1jQ-gv-guY">
             <objects>
-                <viewController storyboardIdentifier="___VARIABLE_productName:identifier___ViewController" id="Smf-WY-mxj" customClass="___VARIABLE_productName:identifier___ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="___VARIABLE_productName:identifier___ViewController" id="Smf-WY-mxj" customClass="___VARIABLE_productName:identifier___ViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XQW-c1-u5G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

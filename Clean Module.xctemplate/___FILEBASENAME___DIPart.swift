@@ -21,11 +21,14 @@ class ___VARIABLE_productName: identifier___DIPart: DIPart {
 
         container.register(___VARIABLE_productName:identifier___PresenterImpl.init)
             .as(___VARIABLE_productName:identifier___Presenter.self)
+            .lifetime(.objectGraph)
 
         container.register(___VARIABLE_productName:identifier___InteractorImpl.init)
             .as(___VARIABLE_productName:identifier___Interactor.self)
+            .lifetime(.objectGraph)
 
         container.register(___VARIABLE_productName:identifier___RouterImpl.init)
             .as(___VARIABLE_productName:identifier___Router.self)
+            .lifetime(.objectGraph)
     }
 }

@@ -8,10 +8,16 @@
 
 import UIKit
 
-class ___VARIABLE_productName: identifier___ViewController: UIViewController {
+class ___VARIABLE_productName: identifier___ViewController: UIViewController, CustomViewLoadable {
 
+    typealias Screen = ___VARIABLE_productName: identifier___Screen
+    
 	var presenter: ___VARIABLE_productName:identifier___Presenter!
 
+    override func loadView() {
+        view = Screen()
+    }
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
     }

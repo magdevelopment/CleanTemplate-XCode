@@ -6,15 +6,14 @@
 //  Copyright © 2017 MAG Development. All rights reserved.
 //
 
-import Foundation
 import DITranquillity
+import Foundation
 
 class ___VARIABLE_productName: identifier___DIPart: DIPart {
 
     static func load(container: DIContainer) {
 
-        // swiftlint:disable:next force_unwrapping
-        container.register { /* Provide view controller */ }
+        container.register { ___VARIABLE_productName:identifier___ViewController() }
             .as(___VARIABLE_productName:identifier___View.self)
             .injection(cycle: true) { $0.presenter = $1 }
             .lifetime(.objectGraph)

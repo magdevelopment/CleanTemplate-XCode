@@ -12,7 +12,6 @@ import Foundation
 class ___VARIABLE_productName: identifier___DIPart: DIPart {
 
     static func load(container: DIContainer) {
-
         container.register { ___VARIABLE_productName:identifier___ViewController() }
             .as(___VARIABLE_productName:identifier___View.self)
             .injection(cycle: true) { $0.presenter = $1 }

@@ -14,9 +14,7 @@ class ___VARIABLE_productName: identifier___Screen: UIView {
         super.init(frame: .zero)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        return nil
-    }
+    required init?(coder aDecoder: NSCoder) { nil }
     
     override func layoutSubviews() {
         super.layoutSubviews()
